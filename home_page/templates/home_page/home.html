@@ -1,0 +1,39 @@
+{% extends "home_page/header.html"%}
+
+{% block content %}
+
+
+
+	<!--anouncement (if there is any)-->
+
+	<!--video/music-->
+	<div class="video_w">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+		</iframe>
+	</div>
+
+	<!--freakin wild idea. Put group description insted of the top. its just an idea-->
+
+	<!--a list of gigs-->
+	<div id="gigs" class="gig_hold">
+		<p class="top"><b>Gigs</b></p>
+
+        {% for gig in object_list %}
+			<div class="gig">
+				<div class="date_box">
+					<p class="date">{{ gig.date|date:"M. d"}}</p>
+				</div>
+				<div class="location">
+					<ul>
+						<li><p><b>{{ gig.venue }}</b></p></li>
+						<li><p>{{gig.location}}</p></li>
+					</ul>
+				</div>
+
+			</div>
+        {% endfor %}
+	</div>
+
+{% endblock %}
+
+

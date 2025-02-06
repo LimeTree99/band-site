@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	{% load static %}
+
+    <!-- these are for webtrafic -->
+	<meta name="description" content="Official site of R1SE">
+	<meta name="key" content="R1SE, r1se, R1se, rise, Rise, Waterloo, Laurier">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'green-audio-player/dist/css/main.min.css' %}">
+
+    <title>R1SE</title><!-- you could make this represent the place you are on the site -->
+	<script>
+		function scroll() {
+			var gigPos = document.getElementById("gigs");
+			console.log(gigPos.offsetTop)
+			window.scrollTo(0,gigPos.offsetTop);
+		}
+	</script>
+</head>
+<body>
+
+	<!--the image that is in the background when you enter the page-->
+	<img class="background-image" src="{% static 'img/band_hold.jpg' %}" alt="band image">
+
+	
+
+	<ul class="nav">
+		<li><a href="/#gigs">Gigs</a></li>
+		<li><a href="/contact/">Contact</a></li>
+
+		<!--logo-->
+		<li><a href="/"><img class="logo" src="{% static 'img/band_logo.jpg' %}" alt="band logo"></a></li>
+
+		<li><a href="/about/">About</a></li>
+		<li><a href="/music/">Music</a></li>
+	</ul>
+	{% block content %}
+
+	{% endblock %}
+	<!--footer-->
+	
+	<div class="footer">
+
+		<p class="copyright">&copy;
+			<script type="text/javascript">
+  				document.write(new Date().getFullYear());
+			</script>
+			R1SE</p>
+		<ul>
+			<li><a href="https://www.facebook.com/R1SE-2436265323069677/">
+				<img class="social_media_link" src="
+				{% static 'img/facebook_icon.png' %}" alt="Facebook"></a></li>
+			<li><a href="https://www.instagram.com/r1se.theband/">
+				<img class="social_media_link" src="
+				{% static 'img/instagram_icon.png' %}" alt="instagram"></a></li>
+			<li><a href="youtube.com">
+				<img class="social_media_link" src="
+				{% static 'img/youtube_icon.png' %}" alt="youtube"></a></li>
+		</ul>
+	</div>
+
+    
+</body>
+</html>

@@ -1,0 +1,159 @@
+html{
+	scroll-behavior: smooth;
+}
+
+html *{
+   color: #000 !important;
+   font-family: Arial !important;
+}
+
+body{
+	margin: 0;
+	background-color: #eee;
+}
+
+.nav{
+	z-index: 3;
+	position: absolute;
+	text-align: center;
+	margin: 0px;
+	padding: 0;
+	top: 0px;
+	width: 100%;
+}
+.nav li{
+	display: inline;
+	align-items: left;
+	margin: 10px;
+	top: 50px;
+	text-align: center;
+}
+.logo{
+	width: 20vw;
+}
+
+.nav li a{
+	position: relative;
+	display: inline;
+	text-decoration: none;
+	color: black;
+	font-size: 4vw;
+}
+.nav li a:hover{
+	text-decoration: underline;
+}
+
+
+.background-image{
+	z-index:-1;
+	width: 100%;
+	top:0px;
+	
+}
+.video_w{
+	position: relative;
+	padding-bottom:56.25%;
+	padding-top: 25px;
+	top: 40%;
+	margin: auto;
+
+}
+.video_w iframe{
+	position: absolute;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	margin: auto;
+	height: 80%;
+	width: 80%;
+}
+
+
+.gig_hold{
+	position: relative;
+	padding-bottom: 40px;
+	margin: auto;
+	height: 80%;
+	width: 80%;
+}
+.gig_hold .top{
+	font-size: 55px;
+}
+.gig{
+	background-color: #777;
+	margin: 0 0 5px 0;
+	display: flex;
+  	align-items: center;
+}
+.gig .date_box{
+	background-color: #5b5b5b;
+	display: inline-block;
+	margin: 15px;
+	width: 40%;
+	height: 100%;
+}
+.gig .date{
+	font-size: 40px;
+	margin-left: 20px;
+}
+.gig .location{
+	display: inline-block;
+	//background-color: #505063;
+	text-align: 50%;
+	margin: 20px;
+	width: 50%;
+	height: 100%;
+}
+.gig ul{
+	display: inline-block;
+	list-style-type: none;
+	margin: 0 auto;
+}
+.gig li{
+
+}
+.gig li p{
+	font-size: 20px;
+}
+
+
+
+.footer{
+	position: relative;
+	background: #888;
+	bottom: 0px;
+	width: 100%;
+	display: inline-block;
+}
+.footer p{
+	position: relative;
+	bottom: -20px;
+
+
+}
+.footer li{
+	display: inline;
+	align-items: left;
+	margin: 10px;
+	top: 50px;
+	text-align: center;
+}
+.social_media_link{
+	position: relative;
+	left: 70vw;
+	bottom: 20px;
+	width: 30px;
+	height: 30px;
+}
+.copyright{
+	text-align: center;
+}
+
+
+
+.songs{
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
